@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_0088F0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp" >
+
+            <TextView
+                android:id="@+id/qrcode_sign_tv_topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_qrcode_sign_in_top"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-2.5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg_dash_d0d0d0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_qrcode_sign_in_body" >
+
+            <com.micen.suppliers.widget.CircleImageView
+                android:id="@+id/qrcode_sign_iv_user_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                app:civ_border_color="@color/color_e0e0e0"
+                app:civ_border_width="1dp"
+                app:civ_fill_color="@color/white" />
+
+            <TextView
+                android:id="@+id/qrcode_sign_tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrcode_sign_iv_user_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/qrcode_result_welcome"
+                android:textColor="@color/color_333333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/qrcode_sign_tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrcode_sign_tv_welcome"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:ellipsize="middle"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:textColor="@color/color_333333"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/qrcode_sign_ll_user_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrcode_sign_tv_user_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:textColor="@color/color_333333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/qrcode_sign_ll_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrcode_sign_ll_user_company_name"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_sign_in_btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/qrcode_sign_in"
+                android:textColor="@color/color_ffffff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/common_title" />
+
+</FrameLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_setting_personal"
+                style="@style/setting_item"
+                android:text="@string/setting_personal" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <ImageView
+                    android:id="@+id/iv_setting_disturb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_setting_disturb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/iv_setting_disturb" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_disturb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_undisturb"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_setting_disturb"
+                        style="@style/SettingCheckBox1"
+                        android:button="@drawable/btn_common_switch" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_disturb_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_setting_disturb"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/setting_undisturb_explain"
+                        android:textColor="@color/color_999999"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_setting_broadcast_msg"
+                style="@style/setting_item"
+                android:text="@string/setting_broadcast_msg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:id="@+id/tv_setting_feedback"
+                style="@style/setting_item"
+                android:layout_marginTop="10dp"
+                android:text="@string/setting_feedback" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_update"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_update"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_setting_update_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_update_status_new"
+                    android:textColor="@color/color_999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_setting_aboutus"
+                style="@style/setting_item"
+                android:text="@string/setting_aboutus" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_call_service"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_call_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/setting_service"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_setting_service_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/setting_call_service_tel"
+                    android:textColor="@color/color_0088F0"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_apply_service"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    android:id="@+id/tv_setting_apply_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/setting_apply_service"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/ApplyService"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_apply_service" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:id="@+id/tv_setting_signout"
+                style="@style/setting_item"
+                android:layout_marginTop="10dp"
+                android:text="@string/setting_signout" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

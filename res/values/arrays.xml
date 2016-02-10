@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="recommend_mailbox">
+        <item>\&#064;qq.com</item>
+        <item>\&#064;163.com</item>
+        <item>\&#064;126.com</item>
+        <item>\&#064;yahoo.cn</item>
+        <item>\&#064;sina.com</item>
+        <item>\&#064;hotmai.com</item>
+        <item>\&#064;gmail.com</item>
+        <item>\&#064;sohu.com</item>
+        <item>\&#064;yahoo.com.cn</item>
+        <item>\&#064;21cn.com</item>
+    </string-array>
+    <string-array name="priceunit_zh">
+        <item>个</item>
+        <item>包</item>
+        <item>箱</item>
+        <item>米</item>
+        <item>双</item>
+        <item>令</item>
+        <item>卷</item>
+        <item>套</item>
+        <item>吨</item>
+        <item>码</item>
+        <item>英尺</item>
+        <item>平方米</item>
+        <item>平方英尺</item>
+    </string-array>
+    <string-array name="priceunit_value">
+        <item>Piece</item>
+        <item>Bag</item>
+        <item>Box</item>
+        <item>Meter</item>
+        <item>Pair</item>
+        <item>Ream</item>
+        <item>Roll</item>
+        <item>Set</item>
+        <item>Ton</item>
+        <item>Yard</item>
+        <item>Foot</item>
+        <item>Square Meter</item>
+        <item>Square Foot</item>
+    </string-array>
+    <string-array name="minorder_value">
+        <item>Pieces</item>
+        <item>Bags</item>
+        <item>Boxes</item>
+        <item>Meter</item>
+        <item>Pairs</item>
+        <item>Reams</item>
+        <item>Rolls</item>
+        <item>Sets</item>
+        <item>Tons</item>
+        <item>Yard</item>
+        <item>Foot</item>
+        <item>Square Meters</item>
+        <item>Square Feet</item>
+    </string-array>
+    <string-array name="modeoftransport_zh">
+        <item>海运</item>
+        <item>空运</item>
+        <item>快递</item>
+        <item>陆运</item>
+    </string-array>
+    <string-array name="modeoftransport_value">
+        <item>By Sea</item>
+        <item>By Air</item>
+        <item>By Courier</item>
+        <item>By Land</item>
+    </string-array>
+    <string-array name="modesofpacking_zh">
+        <item>散装</item>
+        <item>纸包装</item>
+        <item>纸箱</item>
+        <item>木盒</item>
+        <item>桶装</item>
+        <item>袋装</item>
+        <item>托盘</item>
+    </string-array>
+    <string-array name="modesofpacking_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="qualityinspection_zh">
+        <item>内部控制</item>
+        <item>买家检测</item>
+        <item>第三方检测</item>
+    </string-array>
+    <string-array name="qualityinspection_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="filetype_zh">
+        <item>装箱单</item>
+        <item>提货单</item>
+        <item>货物原产地证明书</item>
+        <item>保险单</item>
+        <item>熏蒸检验证书</item>
+    </string-array>
+    <string-array name="filetype_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="payment_name">
+        <item>T/T</item>
+        <item>L/C</item>
+        <item>D/P</item>
+        <item>W/U</item>
+    </string-array>
+    <string-array name="payment_value">
+        <item>T/T</item>
+        <item>L/C</item>
+        <item>D/P</item>
+        <item>W/U</item>
+    </string-array>
+    <string-array name="currency_name">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>RMB</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>JPY</item>
+        <item>HKD</item>
+        <item>NZD</item>
+        <item>SGD</item>
+        <item>NTD</item>
+    </string-array>
+    <string-array name="currency_value">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>RMB</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>JPY</item>
+        <item>HKD</item>
+        <item>NZD</item>
+        <item>SGD</item>
+        <item>NTD</item>
+    </string-array>
+    <string-array name="tradetype_name">
+        <item>EXW</item>
+        <item>FOB</item>
+        <item>FCA</item>
+        <item>FAS</item>
+        <item>CFR</item>
+        <item>CIF</item>
+        <item>CPT</item>
+        <item>CIP</item>
+        <item>DAT</item>
+        <item>DDP</item>
+        <item>DDU</item>
+        <item>DAP</item>
+    </string-array>
+    <string-array name="tradetype_value">
+        <item>EXW</item>
+        <item>FOB</item>
+        <item>FCA</item>
+        <item>FAS</item>
+        <item>CFR</item>
+        <item>CIF</item>
+        <item>CPT</item>
+        <item>CIP</item>
+        <item>DAT</item>
+        <item>DDP</item>
+        <item>DDU</item>
+        <item>DAP</item>
+    </string-array>
+    <string-array name="tradetype_recommend_name">
+        <item>FOB</item>
+        <item>CFR</item>
+        <item>CIF</item>
+    </string-array>
+    <string-array name="tradetype_recommend_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="payment_recommend_name">
+        <item>L/C</item>
+        <item>T/T</item>
+        <item>D/P</item>
+    </string-array>
+    <string-array name="payment_recommend_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="priceunit_recommend_zh">
+        <item>个</item>
+        <item>包</item>
+        <item>箱</item>
+        <item>英尺</item>
+        <item>米</item>
+        <item>双</item>
+        <item>令</item>
+        <item>卷</item>
+        <item>套</item>
+        <item>平方米</item>
+        <item>平方英尺</item>
+        <item>吨</item>
+        <item>码</item>
+    </string-array>
+    <string-array name="priceunit_recommend_name">
+        <item>Piece</item>
+        <item>Bag</item>
+        <item>Box</item>
+        <item>Foot</item>
+        <item>Meter</item>
+        <item>Pairs</item>
+        <item>Reams</item>
+        <item>Rolls</item>
+        <item>Sets</item>
+        <item>Square Meters</item>
+        <item>Square Foot</item>
+        <item>Tons</item>
+        <item>Yard</item>
+    </string-array>
+    <string-array name="priceunit_recommend_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

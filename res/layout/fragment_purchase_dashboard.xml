@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.micen.suppliers.view.PageStatusView
+            android:id="@+id/broadcast_page_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            page:pageStatusLogo="@drawable/ic_data_empty"
+            page:pageStatusText="@string/no_related_data" />
+
+        <com.micen.suppliers.view.SearchListProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <com.focustech.common.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/lv_purchaseinfoListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/color_e0e0e0"
+            android:dividerHeight="0.5dp"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_scroll_top"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_home_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

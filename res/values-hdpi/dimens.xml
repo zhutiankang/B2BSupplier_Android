@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="feedback_button_width">94dp</dimen>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/purchase_dialog_choosefromgalleryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_quote_now_btn"
+        android:gravity="center"
+        android:text="@string/choosefromgallery"
+        android:textColor="@color/color_333333"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_e0e0e0" >
+    </View>
+
+    <TextView
+        android:id="@+id/purchase_dialog_takephotosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_quote_now_btn"
+        android:gravity="center"
+        android:text="@string/takephotos"
+        android:textColor="@color/color_333333"
+        android:textSize="17sp" />
+
+</LinearLayout>

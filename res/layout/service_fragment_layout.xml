@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/rl_service_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/color_0088F0" >
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_common_btn"
+            android:src="@drawable/ic_scanning" />
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_common_btn"
+                android:src="@drawable/ic_setting" />
+
+            <ImageView
+                android:id="@+id/iv_newversion_flag"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_new_flag"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.focustech.common.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/rf_service_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_service_topbar"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/bg_list_selector"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

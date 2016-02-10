@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_selector"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/list_item_purchase_product_imgImageView"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/list_item_purchase_product_nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_purchase_product_imgImageView"
+        android:focusable="false" />
+
+    <RatingBar
+        android:id="@+id/list_item_purchase_product_starRatingBar"
+        style="@style/purchase_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_purchase_product_nameTextView"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/list_item_purchase_product_imgImageView"
+        android:isIndicator="true"
+        android:numStars="5" />
+
+    <TextView
+        android:id="@+id/list_item_purchase_product_masterTextView"
+        style="@style/purchase_rfqinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_purchase_product_starRatingBar"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/list_item_purchase_product_imgImageView"
+        android:focusable="false"
+        android:text="@string/master" />
+
+    <TextView
+        android:id="@+id/list_item_purchase_product_masternameTextView"
+        style="@style/purchase_rfqinfo_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_purchase_product_starRatingBar"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/list_item_purchase_product_masterTextView"
+        android:focusable="false"
+        android:text="@string/productstar" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    style="@style/BaseLayout"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <com.micen.suppliers.view.SearchListProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.focustech.common.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/message_contacts_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_f2f2f2"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/color_f2f2f2"
+        android:dividerHeight="15dp"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="invisible"
+        page:pageStatusLogo="@drawable/ic_message_contacts_list_empty"
+        page:pageStatusText="@string/message_contacts_list_empty" />
+
+</LinearLayout>

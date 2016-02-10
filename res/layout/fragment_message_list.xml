@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <com.micen.suppliers.view.SearchListProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.focustech.common.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_mail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/color_e0e0e0"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/bg_list_selector"
+        android:scrollingCache="false" />
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        page:pageStatusLinkText="@string/message_see_purchase"
+        page:pageStatusLinkTextImg="@drawable/ic_message_list_empty_purchase"
+        page:pageStatusLinkTextprefixion="@string/message_see_purchase_prefixion"
+        page:pageStatusLogo="@drawable/ic_message_list_empty"
+        page:pageStatusText="@string/message_list_empty" />
+
+</LinearLayout>

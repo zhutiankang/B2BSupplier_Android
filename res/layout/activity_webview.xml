@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout" >
+
+    <include
+        android:id="@+id/webview_title"
+        layout="@layout/common_title" />
+
+    <ProgressBar
+        android:id="@+id/webview_progressbar"
+        style="@style/tallerBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/webview_title"
+        android:max="100"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_webview_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_quote_now_btn"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_cccccc" />
+
+        <TextView
+            android:id="@+id/common_webview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_0088F0"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/common_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_webview_button"
+        android:layout_below="@id/webview_progressbar" />
+
+</RelativeLayout>

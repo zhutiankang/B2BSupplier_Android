@@ -1,0 +1,104 @@
+.apply .apply-top{
+	background: #009ff0 url(../img/bg.jpg) no-repeat;
+	background-size: 100% auto;
+	padding-top: 1.1rem;
+	color: #fff;
+}
+.apply-top h1{
+	height: 2.08rem;
+	margin: 0 0 0 .5rem;
+	background:url(../img/logo.png) no-repeat left top;
+	background-size: auto 2.08rem;
+	padding: 0 0 .54rem 2.7rem;
+}
+.apply-top h1 .txt{
+	font-size: 1.1rem;
+	line-height: 1.44rem;
+}
+.apply-top h1 .txt2{
+	font-size: .5rem;
+	line-height: .64rem;
+	font-weight: normal;
+}
+.attr-list{
+	padding:0 0 1.5rem .48rem;
+}
+.attr-list li{
+	float: left;
+	height: 1.2rem;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width: 6.8rem;
+	padding-left: .68rem;
+	font-size: .64rem;
+	line-height: 1.2rem;
+	background: url(../img/right.png) no-repeat left center;
+	background-size: .5rem auto;
+}
+.apply-top h2{
+	font-size: .64rem;
+	line-height: 1.04rem;
+	padding: 0 .48rem;
+	font-weight: normal;
+}
+.apply-top .intro{
+	padding: 0 .48rem .4rem;
+	font-size: .52rem;
+	line-height: .8rem;
+}
+.apply-top .img-list{
+	padding: 0 .43rem;
+	padding-bottom: .4rem;
+}
+.apply-top .img-list img{
+	float: left;
+	width: 65.5px;
+	margin: 0 2.5px 5px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.14);
+}
+@media screen and (width: 320px) {
+    .apply-top .img-list img{
+        margin: 0 4px 8px
+    }
+}
+@media screen and (width: 360px) {
+    .apply-top .img-list img{
+        margin: 0 1px 5px;
+    }
+}
+@media screen and (width: 414px) {
+    .apply-top .img-list img{
+        width: 73px;
+    }
+}
+.apply-top .arr-down{
+	height: 1.2rem;
+	background: url(../img/arr-down.png) no-repeat center;
+	background-size: .78rem auto;
+}
+
+.apply .apply-bottom{
+	background: #efeff4;
+	padding-top: 1.2rem;
+}
+.apply-bottom h2{
+	height: .6rem;
+	font-size: .56rem;
+	line-height: .6rem;
+	padding-bottom: .46rem;
+	text-align: center;
+	font-weight: normal;
+	color: #555;
+}
+.apply-bottom h2 b{
+	color: #222;
+	font-weight: bold;
+}
+.apply-bottom img{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	display: block;
+	width: 100%;
+	padding: 0 .48rem;
+	padding-bottom: 1.2rem;
+}

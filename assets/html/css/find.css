@@ -1,0 +1,24 @@
+
+.find{
+	width: 100%;
+}
+.find .find-item{
+	position: relative;
+	height: auto;
+	margin-bottom: .28rem;
+}
+.find-item img{
+	width: 100%;
+	vertical-align: top;
+}
+.find-item .title{
+	height: .7rem;
+	padding: 0 .6rem .5rem;
+	margin-top: -1.2rem;
+	font-size: .64rem;
+	color: #fff;
+	line-height: .7rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tv_personal_service_more" type="id"/>
+
+    <!-- Message -->
+    <item name="message_popup_gallery" type="id"/>
+    <item name="message_popup_camera" type="id"/>
+    <item name="message_add_attachment" type="id"/>
+    <item name="message_capture_image" type="id"/>
+    <item name="message_capture_del_image" type="id"/>
+    <item name="message_popup_cancel" type="id"/>
+    <item name="contentFL1" type="id"/>
+    <item name="contentFL2" type="id"/>
+    <item name="contentFL3" type="id"/>
+
+</resources>

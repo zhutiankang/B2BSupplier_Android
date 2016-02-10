@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_notify"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    style="@style/SettingPersonalKey"
+                    android:text="@string/setting_notify" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_notify"
+                    style="@style/SettingCheckBox1"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/btn_common_switch" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/setting_notify_content"
+                android:textColor="@color/color_0088F0"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_notify_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    style="@style/SettingPersonalKey"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/setting_notify_inquiry" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_notify_inquiry"
+                    style="@style/SettingCheckBox2"
+                    android:button="@drawable/btn_common_checkbox" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_notify_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    style="@style/SettingPersonalKey"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/setting_notify_purchase" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_notify_purchase"
+                    style="@style/SettingCheckBox2"
+                    android:button="@drawable/btn_common_checkbox" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_notify_service"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_list_selector" >
+
+                <TextView
+                    style="@style/SettingPersonalKey"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/setting_notify_service" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_notify_service"
+                    style="@style/SettingCheckBox2"
+                    android:button="@drawable/btn_common_checkbox" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

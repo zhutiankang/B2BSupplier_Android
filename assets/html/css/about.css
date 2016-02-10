@@ -1,0 +1,28 @@
+.about{
+	padding: 0 .6rem;
+	color: #333;
+	padding-top: 1rem;
+}
+.about h2{
+	height: 2rem;
+	font-size: .72rem;
+	line-height: 2rem;
+	font-weight: bold;
+}
+.about p{
+	margin: 0;
+	font-size: .6rem;
+	line-height: 1rem;
+	padding-bottom: .5rem;
+}
+.about ul{
+	padding:0 0 .5rem 1rem;
+}
+.about ul li{
+	font-size: .6rem;
+	line-height: 1rem;
+	list-style: decimal;
+}
+.about ul ul{
+	padding-bottom: 0;
+}

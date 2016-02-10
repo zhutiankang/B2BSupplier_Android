@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list_selector"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:id="@+id/purchase_list_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/listitem_title_margin_bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rfq_need_quote_list_item_nameTextView"
+            style="@style/purchase_listitem_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/rfq_need_quote_list_item_recommendedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_recommend"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/recommended"
+            android:textColor="@color/color_ffffff"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+        <com.micen.suppliers.widget.CountryImageView
+            android:id="@+id/rfq_need_quote_list_item_countryImageView"
+            android:layout_width="15dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_companyname"
+        style="@style/purchase_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_list_item_top"
+        android:text="@string/companyname_zh" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_companynameValueTextView"
+        style="@style/purchase_listitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_list_item_top"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/rfq_need_quote_list_item_companyname"
+        android:text="@string/expireddate" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_user"
+        style="@style/purchase_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfq_need_quote_list_item_companyname"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/quoteuser_zh" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_userValueTextView"
+        style="@style/purchase_listitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rfq_need_quote_list_item_companynameValueTextView"
+        android:layout_alignTop="@id/rfq_need_quote_list_item_user"
+        android:text="@string/quoteleft" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_expireddate"
+        style="@style/purchase_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfq_need_quote_list_item_user"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/expireddate_zh" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_expireddateValueTextView"
+        style="@style/purchase_listitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rfq_need_quote_list_item_companynameValueTextView"
+        android:layout_alignTop="@id/rfq_need_quote_list_item_expireddate"
+        android:text="@string/quoteleft" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_receiveddate"
+        style="@style/purchase_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rfq_need_quote_list_item_expireddate"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/receiveddate_zh" />
+
+    <TextView
+        android:id="@+id/rfq_need_quote_list_item_receiveddateValueTextView"
+        style="@style/purchase_listitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rfq_need_quote_list_item_companynameValueTextView"
+        android:layout_alignTop="@id/rfq_need_quote_list_item_receiveddate"
+        android:text="@string/quoteleft" />
+
+</RelativeLayout>

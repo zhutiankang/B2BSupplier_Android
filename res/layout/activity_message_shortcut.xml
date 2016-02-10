@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    style="@style/BaseLayout"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        page:pageStatusLogo="@drawable/ic_message_list_empty"
+        page:pageStatusText="@string/message_short_cut_list_empty" />
+
+    <ListView
+        android:id="@+id/message_short_cut_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/color_e0e0e0"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/bg_list_selector"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </ListView>
+
+</LinearLayout>

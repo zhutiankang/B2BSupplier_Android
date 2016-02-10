@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_message_popup"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="3dp" >
+
+    <LinearLayout
+        android:id="@+id/message_item_pop_undistributed"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_white_common_btn"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="65dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_distribute"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_item_pop_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_white_common_btn"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="65dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_delect"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

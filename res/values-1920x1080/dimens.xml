@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="easy_about_title">15sp</dimen>
+    <dimen name="flow_btn_height">32dp</dimen>
+
+</resources>

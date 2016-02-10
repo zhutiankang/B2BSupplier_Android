@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res-auto"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        page:pageStatusLogo="@drawable/ic_data_empty"
+        page:pageStatusText="@string/no_related_data" />
+
+    <com.micen.suppliers.view.SearchListProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/purchase_search_categoryhistoryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15sp"
+        android:text="@string/category_search_history_zh"
+        android:textColor="@color/color_999999"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.micen.suppliers.widget.flowlayout.FlowLayout
+        android:id="@+id/purchase_search_recentcategoryFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:gravity="fill"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        f:debugDraw="false"
+        f:layoutDirection="ltr" >
+    </com.micen.suppliers.widget.flowlayout.FlowLayout>
+
+    <ListView
+        android:id="@+id/purchase_choosecategory_categotyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff" >
+    </ListView>
+
+</LinearLayout>

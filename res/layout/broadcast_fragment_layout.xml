@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/color_0088F0" >
+
+        <TextView
+            android:id="@+id/broadcast_title_name"
+            style="@style/CommonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_broadcast_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_broadcast" >
+
+        <ImageView
+            android:id="@+id/iv_inquiry_logo"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_broadcast_inquiry" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_inquiry_logo" >
+
+            <TextView
+                android:id="@+id/tv_inquiry_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_notify_inquiry"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_inquiry_name"
+                android:text="@string/setting_notify_inquiry_explain"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_inquiry_unread"
+                style="@style/QuantityBackGround"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:paddingLeft="70dp"
+        android:src="@color/split_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_broadcast_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="@drawable/bg_broadcast" >
+
+        <ImageView
+            android:id="@+id/iv_purchase_logo"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_broadcast_purchase" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_purchase_logo" >
+
+            <TextView
+                android:id="@+id/tv_purchase_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_notify_purchase"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_purchase_name"
+                android:text="@string/setting_notify_purchase_explain"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_purchase_unread"
+            style="@style/QuantityBackGround"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:paddingLeft="70dp"
+        android:src="@color/split_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_broadcast_service"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="@drawable/bg_broadcast" >
+
+        <ImageView
+            android:id="@+id/iv_service_logo"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_broadcast_service" />
+
+        <TextView
+            android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_service_logo"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notify_service"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_service_unread"
+            style="@style/QuantityBackGround"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

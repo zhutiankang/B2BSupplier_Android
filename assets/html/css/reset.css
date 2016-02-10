@@ -1,0 +1,142 @@
+html {
+  font-family: sans-serif; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+ 	margin: 0;
+  -webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 0.64rem;
+	font-family: "Helvetica Neue",Helvetica,Roboto,Arial,"Lucida Grande","Microsoft Yahei",sans-serif;
+	color: #333;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+ul,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color:#004cd6;
+	text-decoration: none;
+}
+.cf:before,
+.cf:after{
+	content: "";
+	display: table;
+}
+.cf:after{
+	clear: both;
+}
+
+:focus{
+	outline: 0 none;
+}
+
+
+@media screen and (max-width: 319px) {
+    html {
+        font-size:21.333333333px
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size:21.333333333px
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size:24px
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size:25px
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size:25.6px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size:26.6666666666px
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size:27.6px
+    }
+}
+
+@media screen and (min-width: 424px) {
+    html {
+        font-size:28.2666666666px
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size:32px
+    }
+}
+
+@media screen and (min-width: 540px) {
+    html {
+        font-size:36px
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size:42.666666666666px
+    }
+}
+
+@media screen and (min-width: 720px) {
+    html {
+        font-size:48px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size:51.2px
+    }
+}

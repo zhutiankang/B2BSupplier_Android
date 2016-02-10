@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="split_line">#e0e0e0</color>
+    <!-- Message -->
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_e62e2e">#e62e2e</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_0088F0">#0088F0</color>
+    <color name="color_FF3F26">#FF3F26</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_999999">#999999</color>
+    <color name="page_indicator_title">#ffffff</color>
+    <color name="page_indicator_title_selected">#FFA73F</color>
+    <color name="page_indicator_line_background">#e6e6e6</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_cc2929">#cc2929</color>
+    <color name="color_ccb895">#ccb895</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_a6a6a6">#a6a6a6</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_7a7e86">#7a7e86</color>
+    <color name="color_007aff">#007aff</color>
+    <color name="color_0074cd">#0074cd</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+    <color name="color_aaaeb2">#aaaeb2</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_505559">#505559</color>
+    <color name="color_005799">#005799</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_ffa73f">#ffa73f</color>
+    <color name="color_d1d1d1">#d1d1d1</color>
+    <color name="color_fffaee">#fffaee</color>
+    <color name="color_ffdb7b">#ffdb7b</color>
+    <color name="color_393d40">#393d40</color>
+    <!-- quotation -->
+    <color name="color_c7d1d9">#c7d1d9</color>
+    <color name="color_14cc92">#14cc92</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_ebf7ff">#ebf7ff</color>
+    <color name="color_d9f0ff">#d9f0ff</color>
+    <color name="color_e5fafafa">#e5fafafa</color>
+    <color name="color_0091ff">#0091ff</color>
+    <color name="color_8ccdff">#8ccdff</color>
+    <color name="color_bebebe">#bebebe</color>
+    <color name="color_007bd9">#007bd9</color>
+    <color name="color_d2d2d2">#d2d2d2</color>
+    <color name="color_0088f0">#0088f0</color>
+    <!-- QR Code -->
+    <color name="color_f29830">#f29830</color>
+    
+
+</resources>

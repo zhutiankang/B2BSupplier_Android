@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list_selector"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/purchase_quotation_list_item_nameTextView"
+        style="@style/purchase_rfqinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/companyname" />
+
+    <TextView
+        android:id="@+id/purchase_quotation_list_item_namevalueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_toRightOf="@id/purchase_quotation_list_item_nameTextView"
+        android:singleLine="true"
+        android:textColor="@color/color_0088F0"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" >
+
+        <ImageView
+            android:id="@+id/purchase_quotation_list_item_goldImageview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_supplier_gold_member" />
+
+        <ImageView
+            android:id="@+id/purchase_quotation_list_item_asImageview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_supplier_as" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/purchase_quotation_list_item_locationTextView"
+        style="@style/purchase_rfqinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_quotation_list_item_nameTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/location" />
+
+    <TextView
+        android:id="@+id/purchase_quotation_list_item_locationvalueTextView"
+        style="@style/purchase_rfqinfo_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/purchase_quotation_list_item_locationTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/purchase_quotation_list_item_nameTextView" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_expireddateValueTextView"
+        style="@style/purchase_rfqinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_quotation_list_item_locationvalueTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/quotetime" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_quoteleftValueTextView"
+        style="@style/purchase_rfqinfo_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/purchase_search_list_item_expireddateValueTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/purchase_quotation_list_item_nameTextView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/purchase_search_list_item_quoteleftValueTextView"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_dash_d0d0d0" >
+    </View>
+
+</RelativeLayout>

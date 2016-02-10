@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.micen.suppliers.widget.product.ResizeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:id="@+id/quotation_reedit_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        page:pageStatusLogo="@drawable/ic_data_empty"
+        page:pageStatusText="@string/no_related_data" />
+
+    <com.micen.suppliers.view.SearchListProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/quotation_normal_tipLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/quotation_normal_tipTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_fffaee"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_ffdb7b" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/quotation_normal_scrollScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/paddingleftandright"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/color_f2f2f2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/product_info"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_chooseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/choose_from_room"
+                        android:textColor="@color/color_0088F0"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_nameTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_name" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_nameTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_nameTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/product_type" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_nameEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/quotation_normal_title_nameTextView"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="160" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_typeEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_nameTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_nameTextView"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50" >
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/quotation_normal_imgImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:contentDescription="@string/product_image"
+                        android:src="@drawable/ic_purchase_quotation_capture_add" />
+
+                    <ImageView
+                        android:id="@+id/quotation_normal_imgdelImageView"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/product_image"
+                        android:src="@drawable/ic_purchase_quotation_capture_delete"
+                        android:visibility="gone" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_detailEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:gravity="top"
+                        android:hint="@string/input_en"
+                        android:inputType="textMultiLine"
+                        android:maxLength="4000"
+                        android:scrollbars="vertical"
+                        android:singleLine="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <TextView
+                    style="@style/purchase_quotation_titletext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/quotation_detail" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_tradetypeTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trade_type" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_tradetypeTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_portnameTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_tradetypeTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/port_name" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_portnameTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_uintpriceTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_portnameTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/unit_price" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_uintpriceTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_quanityTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_uintpriceTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/minimum_order_quantity" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_quanityTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_paymentTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_quanityTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/payment" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_tradetype_EditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/quotation_normal_title_quanityTextView"
+                        android:hint="@string/trade_type"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_portnameEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_tradetypeTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_quanityTextView"
+                        android:hint="@string/need_a_en_portname"
+                        android:inputType="text"
+                        android:maxLength="50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_portnameTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_quanityTextView"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/quotation_normal_uintpriceEditText"
+                            style="@style/purchase_quotation_edittext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="20" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e0e0e0" />
+
+                        <TextView
+                            android:id="@+id/quotation_normal_currencyTextView"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/unit_dollar" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e0e0e0" />
+
+                        <TextView
+                            android:id="@+id/quotation_normal_unitTextView"
+                            android:layout_width="76dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:drawableRight="@drawable/ic_purchase_down"
+                            android:gravity="center"
+                            android:text="@string/unit_ge" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_uintpriceTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_quanityTextView"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/quotation_normal_quanityEditText"
+                            style="@style/purchase_quotation_edittext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="50" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e0e0e0" />
+
+                        <TextView
+                            android:id="@+id/quotation_normal_quanityTextView"
+                            android:layout_width="76dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:drawableRight="@drawable/ic_purchase_down"
+                            android:gravity="center"
+                            android:text="@string/unit_ge" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/quotation_normal_paymentEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_quanityTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_quanityTextView"
+                        android:hint="@string/pleasechoose"
+                        android:inputType="text" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <LinearLayout
+                    android:id="@+id/quotation_normal_additionalLinearLayout"
+                    style="@style/paddingleftandright"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/color_f2f2f2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/additional_conditions_optional"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/quotation_normal_additionalCheckBox"
+                        style="@style/purchase_rfq_indicator"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/quotation_normal_additionalcontentLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_validdateTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/offer_valid_to" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_validdateTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_dayTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_validdateTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/delivery_time" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_dayTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_mode_of_transportationTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_dayTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/mode_of_transportation" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_mode_of_transportationTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_mode_of_packingTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_mode_of_transportationTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/modes_of_Packing" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_mode_of_packingTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_quality_inspectionTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_mode_of_packingTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/quality_inspection" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/quotation_normal_title_quality_inspectionTextView"
+                        android:background="@color/color_e0e0e0" />
+
+                    <TextView
+                        android:id="@+id/quotation_normal_title_fileTextView"
+                        style="@style/purchase_quotation_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_quality_inspectionTextView"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/file" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_validdateEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:ems="10"
+                        android:hint="@string/pleasechoosedate"
+                        android:inputType="date" >
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_validdateTextView"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/quotation_normal_dayEditText"
+                            style="@style/purchase_quotation_edittext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e0e0e0" />
+
+                        <TextView
+                            android:layout_width="76dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center"
+                            android:text="@string/unit_day" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/quotation_normal_mode_of_transportationEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_dayTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:hint="@string/pleasechoose" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_mode_of_packingEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_mode_of_transportationTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:hint="@string/pleasechoose" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_quality_inspectionEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_mode_of_packingTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:hint="@string/pleasechoose"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/quotation_normal_fileEditText"
+                        style="@style/purchase_quotation_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quotation_normal_title_quality_inspectionTextView"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/quotation_normal_title_validdateTextView"
+                        android:hint="@string/pleasechoose"
+                        android:maxLines="2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <LinearLayout
+                    android:id="@+id/quotation_normal_sampling_indicator_LinearLayout"
+                    style="@style/paddingleftandright"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/color_f2f2f2" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/samplinginfo"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/quotation_normal_sampling_indicator_CheckBox"
+                        style="@style/purchase_rfq_indicator"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_e0e0e0" />
+
+                <LinearLayout
+                    android:id="@+id/quotation_normal_samplingcontentLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/quotation_normal_samplingLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/sampling" />
+
+                        <CheckBox
+                            android:id="@+id/quotation_normal_samplingCheckBox"
+                            style="@style/purchase_rfq_checkbox"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/bg_checkbox_selector"
+                            android:clickable="false"
+                            android:focusable="false" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_e0e0e0" />
+
+                    <LinearLayout
+                        android:id="@+id/quotation_normal_samplingfreeLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/samplingfree" />
+
+                        <CheckBox
+                            android:id="@+id/quotation_normal_freeCheckBox"
+                            style="@style/purchase_rfq_checkbox"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/bg_checkbox_selector"
+                            android:clickable="false"
+                            android:focusable="false" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/sv_reedit_quotation_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/color_e0e0e0" />
+
+                        <TextView
+                            android:id="@+id/sv_reedit_quotation_preview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_quote_now_btn"
+                            android:gravity="center"
+                            android:paddingTop="-0.5dp"
+                            android:text="@string/preview"
+                            android:textColor="@color/color_0088F0"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sv_reedit_quotation_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_quote_now_btn_blue"
+                        android:gravity="center"
+                        android:text="@string/send_immediately"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reedit_quotation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_e0e0e0" />
+
+            <TextView
+                android:id="@+id/reedit_quotation_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_quote_now_btn"
+                android:gravity="center"
+                android:paddingTop="-0.5dp"
+                android:text="@string/preview"
+                android:textColor="@color/color_0088F0"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reedit_quotation_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_quote_now_btn_blue"
+            android:gravity="center"
+            android:text="@string/send_immediately"
+            android:textColor="@color/color_ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</com.micen.suppliers.widget.product.ResizeLinearLayout>

@@ -1,0 +1,243 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BaseLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="CommonTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MessageTitleImageView">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bg_common_btn</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="MailCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_checkbox_selector</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:maxHeight">10.0dip</item>
+    </style>
+
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">3dip</item>
+    </style>
+
+    <style name="setting_item">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:background">@drawable/bg_list_selector</item>
+    </style>
+
+    <style name="SettingCheckBox1">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="SettingCheckBox2">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="FeedBackCheckBox">
+        <item name="android:layout_width">@dimen/feedback_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/bg_feedback_type</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="QuantityBackGround">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_unread</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 采购 -->
+    <style name="purchase_dashboard_list_name">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="purchase_dashboard_list_value">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="ApplyService">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_0088F0</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">@string/apply_as_supplier</item>
+    </style>
+
+    <style name="SettingPersonalKey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SettingPersonalValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/color_999999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="purchase_listitem_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="purchase_listitem_name">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="purchase_listitem_value">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="purchase_rfqinfo_name">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="purchase_rfqinfo_value">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="paddingleftandright">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="purchase_quotation_edittext">
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textColorHint">@color/color_999999</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="purchase_quotation_textview">
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/color_999999</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="purchase_quotation_preview_nametextview">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/color_999999</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="purchase_quotation_preview_valuetextview">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="purchase_quotation_titletext">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/color_f2f2f2</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="purchase_rfqinfo_title">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="purchase_tab_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <style name="purchase_listitem_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_purchase_checkbox</item>
+    </style>
+
+    <style name="purchase_rfq_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_checkbox_selector</item>
+    </style>
+
+    <style name="purchase_rfq_indicator" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_indicator_selector</item>
+    </style>
+
+    <style name="purchase_listitem_group_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_purchase_listitem_group_checkbox</item>
+    </style>
+
+    <style name="purchase_ratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_star_full</item>
+        <item name="android:minHeight">19dip</item>
+        <item name="android:maxHeight">19dip</item>
+    </style>
+
+</resources>

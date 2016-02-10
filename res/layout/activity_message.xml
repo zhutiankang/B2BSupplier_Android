@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/message_ll_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0088F0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/page_indicator_height"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/message_rl_undistributed"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/message_tv_undistributed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/message_undistributed"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/message_page_indicator_text_size" />
+
+                    <TextView
+                        android:id="@+id/message_tv_undistributed_num"
+                        style="@style/QuantityBackGround"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@+id/message_tv_undistributed"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/message_rl_distributed"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/message_tv_distributed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/message_distributed"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/message_page_indicator_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/message_tv_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/message_all"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/message_page_indicator_text_size" />
+        </LinearLayout>
+
+        <com.focustech.common.widget.viewpagerindictor.UnderlinePageIndicator
+            android:id="@+id/message_ulpi_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/page_indicator_line_height"
+            android:background="@color/color_0088F0"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_rl_unread"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/page_indicator_height"
+        android:background="@color/color_f2f2f2" >
+
+        <TextView
+            android:id="@+id/message_show_only_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/mic_show_only_unread"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/message_tv_unread_num"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/message_show_only_unread"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/message_rl_unread_checkbox"
+            android:layout_width="47dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_white_common_btn"
+            android:descendantFocusability="blocksDescendants"
+            android:maxHeight="17.0dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/message_cb_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:button="@drawable/bg_checkbox_selector"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/message_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

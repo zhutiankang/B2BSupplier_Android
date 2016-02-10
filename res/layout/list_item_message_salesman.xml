@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/ms_tv_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ms_tv_distributed"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ms_tv_salesman"
+            android:background="@drawable/bg_message_salesman_distribute"
+            android:gravity="center"
+            android:text="@string/message_allocation_current_select"
+            android:textColor="@color/color_ffffff"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ms_iv_checked"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_message_salesman_checked"
+        android:visibility="invisible" >
+    </ImageView>
+
+</LinearLayout>

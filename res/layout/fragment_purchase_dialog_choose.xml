@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/purchase_dialog_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/purchase_dialog_chooseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:divider="@color/color_e0e0e0"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <View
+        android:id="@+id/common_dialog_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:background="@color/common_dialog_line" />
+
+    <LinearLayout
+        android:id="@+id/common_dialog_two_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingBottom="1.5dp"
+        android:paddingLeft="2.5dp"
+        android:paddingRight="2.5dp" >
+
+        <Button
+            android:id="@+id/common_dialog_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_update_dialog_left"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/common_dialog_text"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/common_dialog_line2"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_dialog_line" />
+
+        <Button
+            android:id="@+id/common_dialog_btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_update_dialog_right"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="@string/confirm"
+            android:textColor="@color/common_dialog_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

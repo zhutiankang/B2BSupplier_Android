@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_service_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="@drawable/bg_list_selector" >
+
+        <ImageView
+            android:id="@+id/iv_inquiry_logo"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_service_inquiry" />
+
+        <TextView
+            android:id="@+id/tv_inquiry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_inquiry_logo"
+            android:gravity="center_vertical"
+            android:text="@string/inquiry_name"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_service_inquiry_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_list_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/unread_inquiry"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_inquiry_unread"
+                style="@style/QuantityBackGround"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/split_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_service_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="@drawable/bg_list_selector" >
+
+        <ImageView
+            android:id="@+id/iv_purchase_logo"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_service_purchase" />
+
+        <TextView
+            android:id="@+id/tv_purchase_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_purchase_logo"
+            android:gravity="center_vertical"
+            android:text="@string/purchase_name"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_service_purchase_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_list_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/tv_purchase_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/unoffer_purchase"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_purchase_unread"
+                style="@style/QuantityBackGround"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/color_f2f2f2" />
+
+    <LinearLayout
+        android:id="@+id/ll_service_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <com.focustech.common.widget.circulatebanner.CirculateBanner
+            android:id="@+id/promotion_banner_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="84dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/color_f2f2f2" />
+    </LinearLayout>
+
+</LinearLayout>

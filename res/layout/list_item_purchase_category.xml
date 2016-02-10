@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list_selector"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="0dp" >
+
+    <TextView
+        android:id="@+id/list_item_purchase_category_nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/list_item_purchase_category_chooseCheckBox"
+        style="@style/purchase_listitem_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+</LinearLayout>

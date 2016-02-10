@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="page_indicator_title">16sp</dimen>
+    <dimen name="page_indicator_height">43dp</dimen>
+    <dimen name="page_indicator_line_height">4dp</dimen>
+    <dimen name="message_page_indicator_text_size">15sp</dimen>
+    <dimen name="flow_btn_height">35dp</dimen>
+    <dimen name="listitem_margin_top">2dp</dimen>
+    <dimen name="listitem_title_margin_bottom">4dp</dimen>
+    <dimen name="feedback_button_width">108dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="easy_about_title">14sp</dimen>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            style="@style/SettingPersonalKey"
+            android:text="@string/personal_name" />
+
+        <TextView
+            android:id="@+id/tv_personal_name"
+            style="@style/SettingPersonalValue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            android:id="@+id/tv_personal_member_key"
+            style="@style/SettingPersonalKey"
+            android:text="@string/personal_member" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_personal_member_key" >
+
+            <TextView
+                android:id="@+id/tv_personal_member"
+                style="@style/SettingPersonalValue"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            style="@style/SettingPersonalKey"
+            android:text="@string/personal_status" />
+
+        <TextView
+            android:id="@+id/tv_personal_status"
+            style="@style/SettingPersonalValue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            style="@style/SettingPersonalKey"
+            android:text="@string/personal_tag" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_personal_tag_gb"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/iv_personal_tag_audit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            style="@style/SettingPersonalKey"
+            android:text="@string/personal_level" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_personal_level"
+                style="@style/SettingPersonalValue" />
+
+            <TextView
+                android:id="@+id/tv_personal_apply_audit"
+                style="@style/ApplyService"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_apply_service" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_personal_service"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/personal_service"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+</LinearLayout>

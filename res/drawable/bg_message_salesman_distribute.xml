@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 分配业务员 当前分配字段的背景色 橙黄色 -->
+    <solid android:color="@color/color_ffa73f" />
+
+    <corners
+        android:bottomLeftRadius="1.5dp"
+        android:bottomRightRadius="1.5dp"
+        android:topLeftRadius="1.5dp"
+        android:topRightRadius="1.5dp" />
+
+</shape>

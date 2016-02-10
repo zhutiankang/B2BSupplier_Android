@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/color_0088F0"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/common_title_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_common_btn"
+            android:src="@drawable/ic_title_back" />
+
+        <TextView
+            android:id="@+id/purchase_search_result_contentTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_purchase_editbox"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/color_ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/fragment_search_result_filterButton"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_common_btn"
+            android:src="@drawable/ic_purchase_filter" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.micen.suppliers.view.PageStatusView
+            android:id="@+id/broadcast_page_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            page:pageStatusLogo="@drawable/ic_data_empty"
+            page:pageStatusText="@string/no_related_data" />
+
+        <com.micen.suppliers.view.SearchListProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.focustech.common.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/purchase_search_result_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/iv_scroll_top"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_home_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

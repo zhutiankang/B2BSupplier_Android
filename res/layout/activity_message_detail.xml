@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:page="http://schemas.android.com/apk/res/com.micen.suppliers"
+    style="@style/BaseLayout"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <com.micen.suppliers.view.SearchListProgressBar
+        android:id="@+id/message_details_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:id="@+id/message_detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/message_detail_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- subject -->
+
+            <TextView
+                android:id="@+id/message_detail_subject_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_detail_subject_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_e0e0e0" />
+
+            <!-- User -->
+
+            <LinearLayout
+                android:id="@+id/message_detail_user_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="11dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_other_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message_detail_sender" />
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_other_people_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_behavior_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_common_btn"
+                        android:padding="3dp"
+                        android:text="@string/message_detail_user_behavior_record"
+                        android:textColor="@color/color_0088F0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/message_detail_user_ll_other_people_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/message_detail_sender_location" />
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_other_people_location_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/message_detail_user_rl_other_people_country_image"
+                        android:layout_width="15dp"
+                        android:layout_height="11dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:visibility="invisible" >
+
+                        <com.micen.suppliers.widget.CountryImageView
+                            android:id="@+id/message_detail_user_iv_other_people_country_image"
+                            android:layout_width="15dp"
+                            android:layout_height="11dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- IP -->
+
+                <LinearLayout
+                    android:id="@+id/message_detail_user_ll_other_people_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/message_detail_ip" />
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="187.55.*.*" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_our"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/message_detail_receiver" />
+
+                    <TextView
+                        android:id="@+id/message_detail_user_tv_our_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/message_detail_myself" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/color_e0e0e0" />
+            <!-- MessageProduct -->
+
+            <LinearLayout
+                android:id="@+id/message_detail_product_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/message_detail_interest_product"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/message_detail_product_ll_interest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_message_details_product"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/message_detail_product_iv_thumb"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/message_detail_product_tv_product_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Ladies Fashion Color Combination PU Tote Handbag (CG8952)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Attachment -->
+
+            <LinearLayout
+                android:id="@+id/message_attachment_hl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <!-- MessageContent -->
+
+            <TextView
+                android:id="@+id/message_detail_tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="9dp"
+                android:textColor="@color/color_333333" />
+
+            <!-- Attachment notification -->
+
+            <LinearLayout
+                android:id="@+id/message_detail_attachment_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_message_details_attachment"
+                android:orientation="horizontal"
+                android:paddingBottom="7.5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7.5dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_message_attachment_logo" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/viewattachment"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.micen.suppliers.view.PageStatusView
+        android:id="@+id/broadcast_page_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        page:pageStatusLogo="@drawable/ic_message_list_empty"
+        page:pageStatusText="@string/message_list_empty" />
+
+</LinearLayout>

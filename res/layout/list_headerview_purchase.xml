@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/myquotation"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/purchase_dashboard_waitRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_white_btn" >
+
+            <ImageView
+                android:id="@+id/purchase_dashboard_img1"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_purchase_dashboard_waiting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@id/purchase_dashboard_img1"
+                android:text="@string/waitforquotation" />
+
+            <TextView
+                android:id="@+id/purchase_dashborad_unreadTextView"
+                style="@style/QuantityBackGround"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/numzero"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_e0e0e0" />
+
+        <RelativeLayout
+            android:id="@+id/purchase_dashboard_managementRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_white_btn" >
+
+            <ImageView
+                android:id="@+id/purchase_dashboard_img2"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_purchase_dashboard_management" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@id/purchase_dashboard_img2"
+                android:layout_weight="1"
+                android:text="@string/managequotation" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/color_f2f2f2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_purchaseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/purchaseinfo"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/purchase_dashboard_newImageView"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_purchase_dashboard_down_light" />
+
+        <TextView
+            android:id="@+id/purchase_dashboard_newTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/purchase_dashboard_newImageView"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/latest"
+            android:textColor="@color/color_0088F0"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/purchase_dashboard_divideView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_purchaseinfo"
+            android:background="@color/color_e0e0e0" />
+    </RelativeLayout>
+
+</LinearLayout>

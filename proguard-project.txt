@@ -1,0 +1,113 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+
+
+-dontwarn com.google.code.**
+-dontwarn oauth.signpost.**
+
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keepattributes JavascriptInterface
+-keep public interface com.facebook.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+-keep class com.umeng.scrshot.**
+-keep class com.umeng.socialize.sensor.**
+-keep class java.lang.management.**  { *; }
+-keep class com.google.code.**  { *; }
+-keep class oauth.signpost.**  { *; }
+
+## for android tpush
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep class com.tencent.android.tpush.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+
+-keep public class **.R$*{
+    public static final int *;
+}
+
+-keep class android.support.** {*;}
+
+# for smack
+
+#-libraryjars libs/smack.jar
+
+-dontwarn java.beans.**
+-dontwarn java.awt.**
+-dontwarn javax.swing.**
+-dontwarn org.xmlpull.v1.**
+-dontwarn javax.naming.**
+-dontwarn javax.security.**
+
+-dontnote org.xbill.DNS.**
+-dontwarn org.xbill.DNS.**
+-dontwarn com.tencent.android.**
+-dontwarn com.tencent.mid.**
+
+-keep class javax.** {*;}
+-keep class com.ken,ai.jbosh.** {*; }
+-keep class com.novell.sasl.client.** {*; }
+-keep class de.measite.smack.** {*; }
+-keep class org.** {*; }
+-keep class org.xmlpull.** { *; }
+-keep class com.sun.** {*;}
+-keep class com.loopj.android.**  { *; }
+-keep class de.measite.smack.AndroidDebugger { *; }
+-keep class * implements org.jivesoftware.smack.initializer.SmackInitializer
+-keep class * implements org.jivesoftware.smack.provider.IQProvider
+-keep class * implements org.jivesoftware.smack.provider.PacketExtensionProvider
+-keep class * extends org.jivesoftware.smack.packet.Packet
+-keep class * implements com.micen.suppliers.module.purchase.ProductFacet
+
+-keepclasseswithmembers class * extends org.jivesoftware.smack.sasl.SASLMechanism {
+    public <init>(org.jivesoftware.smack.SASLAuthentication);
+}
+
+-keepclassmembers class com.micen.suppliers.view.home.WebViewBindJS { 
+    <methods>; 
+}
+
+# for android annotations
+-dontwarn org.springframework.**
+
+# keep member's name for json etc
+-keepclassmembers class com.micen.suppliers.module.** {*;}
+-keepclassmembers class com.focustech.common.module.** {*;}
+
+#umeng
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}

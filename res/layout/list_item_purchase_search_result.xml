@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list_selector"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:id="@+id/purchase_search_list_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/listitem_title_margin_bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/purchase_search_list_item_nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/purchase_search_list_item_recommendTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_recommend"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/recommended"
+            android:textColor="@color/color_ffffff"
+            android:textSize="9sp" />
+
+        <com.micen.suppliers.widget.CountryImageView
+            android:id="@+id/purchase_search_list_item_countryImageView"
+            android:layout_width="15dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="7dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_purchasequantity"
+        style="@style/purchase_dashboard_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_search_list_item_top"
+        android:text="@string/purchasequantity" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_purchasequantityValueTextView"
+        style="@style/purchase_dashboard_list_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_search_list_item_top"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/purchase_search_list_item_purchasequantity"
+        android:text="@string/purchasequantity" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_dateposted"
+        style="@style/purchase_dashboard_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_search_list_item_purchasequantityValueTextView"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/dateposted_" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_datepostedValueTextView"
+        style="@style/purchase_dashboard_list_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/purchase_search_list_item_dateposted"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/purchase_search_list_item_purchasequantity"
+        android:text="@string/dateposted" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_quoteleft"
+        style="@style/purchase_dashboard_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_search_list_item_datepostedValueTextView"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/quoteleft" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_quoteleftValueTextView"
+        style="@style/purchase_dashboard_list_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/purchase_search_list_item_quoteleft"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/purchase_search_list_item_purchasequantity"
+        android:text="@string/quoteleft" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_expireddate"
+        style="@style/purchase_dashboard_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_search_list_item_quoteleftValueTextView"
+        android:layout_marginTop="@dimen/listitem_margin_top"
+        android:text="@string/expireddate" />
+
+    <TextView
+        android:id="@+id/purchase_search_list_item_expireddateValueTextView"
+        style="@style/purchase_dashboard_list_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/purchase_search_list_item_expireddate"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/purchase_search_list_item_purchasequantity"
+        android:text="@string/expireddate" />
+
+</RelativeLayout>

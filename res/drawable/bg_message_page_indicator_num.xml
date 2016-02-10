@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Message部分viewpagerindictor的数字背景 -->
+    <solid android:color="@color/color_FF3F26" />
+
+    <corners android:radius="1.5dp" />
+
+</shape>
